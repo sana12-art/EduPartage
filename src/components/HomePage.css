@@ -1,0 +1,233 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif; /* Police de caractères par défaut */
+  background-color: #f4f7fc; /* Couleur de fond claire */
+  margin: 0; /* Suppression des marges par défaut */
+  padding: 0; /* Suppression du padding par défaut */
+}
+
+/* Titre principal et secondaire */
+h3, h4 {
+  color: #333; /* Couleur du texte */
+  font-family: 'Roboto', sans-serif; /* Police de caractères */
+  margin-bottom: 20px; /* Espace sous les titres */
+  font-weight: bold; /* Texte en gras */
+}
+
+/* Titre de niveau 3 */
+h3 {
+  font-size: 28px; /* Taille de police plus grande */
+  color: #4a90e2; /* Couleur spécifique bleue */
+  text-align: center; /* Centrer le titre */
+  margin-bottom: 30px; /* Marge inférieure plus grande */
+  text-transform: uppercase; /* Mettre le titre en majuscules */
+}
+
+/* Titre de niveau 4 */
+h4 {
+  font-size: 24px; /* Taille de police plus petite */
+  color: #333; /* Couleur du texte */
+  text-align: left; /* Alignement à gauche */
+  font-weight: 600; /* Poids de police modéré */
+  margin-bottom: 20px; /* Marge inférieure */
+}
+
+/* Conteneur de la page */
+div {
+  max-width: 1200px; /* Largeur maximale de 1200px */
+  margin: 0 auto; /* Centrer le contenu */
+  padding: 20px; /* Padding autour du contenu */
+  background-color: #fff; /* Fond blanc */
+  border-radius: 10px; /* Coins arrondis */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre légère autour du conteneur */
+  margin-top: 40px; /* Marge supérieure */
+}
+
+/* Formulaire */
+form {
+  display: flex; /* Utilisation de Flexbox */
+  flex-direction: column; /* Orientation verticale des éléments */
+  gap: 20px; /* Espace entre les éléments du formulaire */
+}
+
+/* Champs de formulaire */
+input {
+  padding: 12px; /* Espace intérieur pour les champs */
+  font-size: 16px; /* Taille de la police */
+  border: 1px solid #ddd; /* Bordure grise */
+  border-radius: 8px; /* Coins arrondis */
+  width: 100%; /* Largeur du champ */
+  max-width: 500px; /* Largeur maximale de 500px */
+  margin: 0 auto; /* Centrer le champ */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Animation de la bordure et de l'ombre */
+}
+
+/* Effet de focus sur les champs */
+input:focus {
+  border-color: #4a90e2; /* Changer la couleur de la bordure au focus */
+  outline: none; /* Supprimer le contour de focus par défaut */
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.6); /* Ombre autour du champ de texte */
+}
+
+/* Boutons */
+button {
+  padding: 12px; /* Espace intérieur pour le bouton */
+  background-color: #4a90e2; /* Couleur de fond bleue */
+  color: white; /* Texte en blanc */
+  border: none; /* Pas de bordure */
+  border-radius: 8px; /* Coins arrondis */
+  font-size: 16px; /* Taille de la police */
+  cursor: pointer; /* Curseur en forme de main */
+  transition: background-color 0.3s; /* Animation de la couleur de fond */
+  width: 100%; /* Largeur du bouton */
+  max-width: 500px; /* Largeur maximale */
+  margin: 0 auto; /* Centrer le bouton */
+}
+
+/* Effet au survol du bouton */
+button:hover {
+  background-color: #357ab7; /* Couleur du bouton au survol */
+}
+
+/* Styling pour les erreurs */
+p {
+  color: red; /* Texte rouge pour les erreurs */
+  font-size: 14px; /* Taille de la police réduite */
+  text-align: center; /* Centrer le texte */
+  margin-bottom: 20px; /* Marge inférieure */
+}
+
+/* Liste des ressources */
+ul {
+  list-style-type: none; /* Supprimer les puces */
+  padding: 0; /* Suppression du padding */
+  margin: 20px 0; /* Marge verticale */
+}
+
+li {
+  background-color: #f9f9f9; /* Fond légèrement gris */
+  padding: 15px; /* Espacement interne */
+  border-radius: 8px; /* Coins arrondis */
+  display: flex; /* Disposition flexible */
+  justify-content: space-between; /* Espacement entre les éléments */
+  align-items: center; /* Alignement vertical centré */
+  margin-bottom: 10px; /* Marge inférieure */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre discrète */
+}
+
+li a {
+  color: #4a90e2; /* Lien bleu */
+  font-weight: bold; /* Texte en gras */
+  text-decoration: none; /* Supprimer le soulignement par défaut */
+}
+
+/* Effet au survol des liens */
+li a:hover {
+  text-decoration: underline; /* Souligner au survol */
+}
+
+/* Bouton de suppression dans la liste */
+li button {
+  background-color: #d9534f; /* Couleur rouge */
+  color: white; /* Texte blanc */
+  padding: 8px 15px; /* Espacement intérieur */
+  border: none; /* Pas de bordure */
+  border-radius: 8px; /* Coins arrondis */
+  cursor: pointer; /* Curseur en forme de main */
+  transition: background-color 0.3s; /* Animation de la couleur */
+}
+
+/* Effet au survol du bouton de suppression */
+li button:hover {
+  background-color: #c9302c; /* Couleur rouge plus foncée au survol */
+}
+
+/* Design responsive pour les petits écrans */
+@media (max-width: 768px) {
+  div {
+    margin-top: 20px; /* Réduction de la marge supérieure */
+    padding: 15px; /* Réduction du padding */
+  }
+
+  form input,
+  form button {
+    width: 100%; /* Les champs et le bouton prennent toute la largeur */
+  }
+
+  h3 {
+    font-size: 24px; /* Réduction de la taille de la police du titre */
+  }
+
+  h4 {
+    font-size: 20px; /* Réduction de la taille du sous-titre */
+  }
+
+  ul {
+    padding: 10px; /* Padding réduit dans la liste */
+  }
+}
+
+/* Modal de confirmation */
+.confirmation-modal {
+  position: fixed; /* Modal fixe à l'écran */
+  top: 0; left: 0; right: 0; bottom: 0; /* Couvre toute la page */
+  background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+  display: flex; /* Utilisation de flexbox pour centrer */
+  justify-content: center; /* Centrer horizontalement */
+  align-items: center; /* Centrer verticalement */
+  z-index: 1000; /* Assurer que le modal soit au-dessus du reste */
+}
+
+.confirmation-modal p {
+  background-color: white; /* Fond blanc pour le texte */
+  padding: 20px; /* Espacement intérieur */
+  border-radius: 10px; /* Coins arrondis */
+  font-size: 18px; /* Taille de la police */
+  margin-bottom: 20px; /* Marge sous le texte */
+}
+
+.confirmation-modal button {
+  padding: 10px 20px; /* Espacement intérieur */
+  margin: 5px; /* Marge autour des boutons */
+  border-radius: 8px; /* Coins arrondis */
+  font-size: 16px; /* Taille de la police */
+  cursor: pointer; /* Curseur en forme de main */
+}
+
+/* Bouton de confirmation */
+.confirmation-modal button:first-child {
+  background-color: #4a90e2; /* Bleu pour la confirmation */
+  color: white;
+}
+
+.confirmation-modal button:first-child:hover {
+  background-color: #357ab7; /* Changement de couleur au survol */
+}
+
+/* Bouton d'annulation */
+.confirmation-modal button:last-child {
+  background-color: #d9534f; /* Rouge pour annuler */
+  color: white;
+}
+
+.confirmation-modal button:last-child:hover {
+  background-color: #c9302c; /* Changement de couleur au survol */
+}
+
+/* Champ de recherche */
+input[type="text"] {
+  padding: 12px; /* Espacement intérieur */
+  font-size: 16px; /* Taille de la police */
+  border: 1px solid #ddd; /* Bordure grise */
+  border-radius: 8px; /* Coins arrondis */
+  width: 100%; /* Largeur du champ */
+  max-width: 500px; /* Largeur maximale */
+  margin: 10px auto 20px; /* Marge autour du champ */
+  transition: border-color 0.3s; /* Animation de la bordure */
+}
+
+/* Effet au focus du champ de recherche */
+input[type="text"]:focus {
+  border-color: #4a90e2; /* Changer la bordure au focus */
+  outline: none; /* Supprimer le contour */
+}
