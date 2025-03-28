@@ -15,12 +15,12 @@ EduPartage est une plateforme d'apprentissage interactive où les utilisateurs p
 - Recherche de ressources.
 
 ### Déploiement :
-Le projet est disponible en ligne à l'adresse suivante : [https://edu-partage.vercel.app](https://edu-partage.vercel.app)
+Le projet est disponible en ligne à l'adresse suivante : [https://edupartage-iqyijwsuw-sanas-projects-5185c685.vercel.app/](https://edupartage-iqyijwsuw-sanas-projects-5185c685.vercel.app/)
 
 ## Installation
 1. Clonez ce repository sur votre machine locale :
 ```bash
-git clone https://github.com/votre-nom-utilisateur/edupartage.git
+git clone https://github.com/sana12-art/EduPartage
 
 
 
